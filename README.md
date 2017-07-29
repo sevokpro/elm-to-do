@@ -1,2 +1,3 @@
 run project:
-* npm install && npm start
+1. npm install && npm start
+2. app serve on localhost:8080

@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run elm:update",
+    "postinstall": "npm run elm:install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "elm:update": "elm package install -y",
+    "elm:install": "elm package install -y",
+    "start": "webpack --config webpack.config.js && light-server -s ./app/dist -p 8080",
     "start:dev:webpack": "webpack --config webpack.config.js --watch",
     "start:dev:server": "light-server -s ./app/dist"
   },
