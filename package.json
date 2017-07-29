@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run elm:update",
     "test": "echo \"Error: no test specified\" && exit 1",
     "elm:update": "elm package install -y",
     "start": "npm-run-all --parallel start:dev:*",
