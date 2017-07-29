@@ -13,6 +13,15 @@ module.exports = ()=>{
             rules: [{
                 test: /\.elm$/,
                 use: 'elm-webpack-loader'
+            },{
+                test: /\.css$/,
+                use: [
+                    `style-loader`,
+                    `css-loader`
+                ]
+            },{
+                test: /\.(svg|ttf|eot|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+                use: `file-loader`
             }]
         },
         plugins: [

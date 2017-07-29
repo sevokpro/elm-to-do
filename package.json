@@ -7,17 +7,22 @@
     "postinstall": "npm run elm:update",
     "test": "echo \"Error: no test specified\" && exit 1",
     "elm:update": "elm package install -y",
-    "start": "npm-run-all --parallel start:dev:*",
     "start:dev:webpack": "webpack --config webpack.config.js --watch",
     "start:dev:server": "light-server -s ./app/dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.28.4",
     "elm": "^0.18.0",
     "elm-webpack-loader": "^4.3.1",
+    "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.29.0",
     "light-server": "^2.2.1",
+    "style-loader": "^0.18.2",
     "webpack": "^2.7.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
   }
 }
